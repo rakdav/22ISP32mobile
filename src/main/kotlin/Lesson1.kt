@@ -6,26 +6,31 @@ fun main(args: Array<String>) {
 //    var name= readln()
 //    println("Привет, $name")
 //    print("Введите a:")
-//    var a:Int = readln().toInt()
+//    var a = readln().toInt()
 //    print("Введите b:")
-//    var b:Int = readln().toInt()
+//    var b = readln().toInt()
 //    var S=a+b
 //    println("$a+$b=$S")
-    var rand= Random()
-    var arrDouble : DoubleArray
-    var arrIntArray=IntArray(10,{rand.nextInt(100)})
-    var arrStr: Array<String?>
-
-    var array = Array(10,{i->(i*i).toString()})
-    for(i in array)
-    {
-        print(i.toString()+" ")
+//    print("Введите номер дня недели:")
+//    val n= readln().toInt()
+//    when(n)
+//    {
+//        1 -> println("Понедельник")
+//        2 -> println("Вторник")
+//        3->println("Среда")
+//        4->println("Четверг")
+//        5->println("Пятница")
+//        6->println("Суббота")
+//        7->println("Воскресенье")
+//        else -> println("Нет такого дня")
+//    }
+    for (i in 1 until 10) {
+        print(i.toString() + " ")
     }
     println()
-    for(i in arrIntArray)
-    {
-        print(i.toString()+" ")
-    }
+    val r=1..8
+    println(5 in r)
+    println(12 !in r)
 
     // Try adding program arguments via Run/Debug configuration.
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
